@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactcss.css"> <!-- CSS dosyanız -->
+    <link rel="stylesheet" href="bckgrstyle.css">
+    <title>İletişim</title>
+</head>
+<body>
+    <header>
+        <h1>Altay Mirzaliyev</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">İletişim</a>
+            <a href="ALTAY-MİRZALİYEV-CV.pdf" target="_blank">CV</a>
+        </nav>
+    </header>
+
+    <div class="contact-form-wrapper">
+        <form class="contact-form">
+            <h5 class="title">İletişim</h5>
+            <p class="description">Sorularınız, yardıma ihtiyacınız veya başka bir konuda bize ulaşmaktan çekinmeyin.</p>
+            <div>
+                <label for="name">İsim:</label>
+                <input type="text" id="name" class="form-input" placeholder="İsim" required>
+            </div>
+            <div>
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" class="form-input" placeholder="E-posta" required>
+            </div>
+            <div>
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" class="form-text-area" placeholder="Mesajınız" required></textarea>
+            </div>
+            <div class="submit-button-wrapper">
+                <button type="submit">Gönder</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
