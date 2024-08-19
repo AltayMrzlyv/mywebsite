@@ -1,0 +1,18 @@
+.blog-posts h2 {
+    cursor: pointer; /* Tıklanabilir olduğunu göstermek için pointer işareti */
+    color: #001022; /* Başlığı mavi yaparak dikkat çekici hale getirmek */
+    text-decoration: underline; /* Alt çizgi ile tıklanabilirliği vurgulamak */
+}
+
+.blog-posts h2:hover {
+    color: #7d7d7d; /* Başlık üzerine gelindiğinde renk değişimi */
+}
+
+.blog-posts h3 {
+    cursor: pointer; /* Tıklanabilir olduğunu göstermek için pointer işareti */
+    color: #001022; /* Başlığı mavi yaparak dikkat çekici hale getirmek */
+    }
+
+.blog-posts h3:hover {
+    color: #7d7d7d; /* Başlık üzerine gelindiğinde renk değişimi */
+}

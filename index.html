@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altay Mirzaliyev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="bckgrstyle.css">
+    <link rel="stylesheet" href="blogyazi.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 5px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .divider {
+            border-top: 2px solid #ccc;
+            margin: 30px 0;
+        }
+
+        .blog-posts {
+            margin-top: 30px;
+        }
+
+        .blog-post {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .blog-posts h2 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+         <a href="index.html">
+            <img src="logo.png" alt="Logo" width="250" height="65" />
+        </a>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="projects.html">Projeler</a></li>
+            <li><a href="mywebsite/ALTAY-MİRZALİYEV-CV.pdf" target="_blank">CV</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="about">
+            <h2>Hakkımda</h2>
+            <img src="ctfoto.png" alt="Benim Fotoğrafım">
+            <p>Merhaba! Ben Altay. Bu blogda ilgi alanlarımı, deneyimlerimi ve düşüncelerimi paylaşıyorum. Daha fazlası için bloguma göz atın!</p>
+        </section>
+
+        <div class="divider"></div> <!-- Divider ekledik -->
+
+        <section id="blog" class="blog-posts">
+            <h2 onclick="window.location.href='blog.html';">Blog Yazıları</h2> <!-- Blog Yazıları başlığına tıklandığında blog.html'e yönlendirir -->
+            <article class="blog-post">
+              
+                <h3 onclick="window.location.href='poost1.html';">Blog Yazısı Başlığı </h3> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at vehicula tortor. Morbi faucibus nisi nec ligula vestibulum...</p>
+                <a href="#">Devamını oku</a>
+            </article>
+
+            <article class="blog-post">
+                <h3>Blog Yazısı Başlığı 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
+                <a href="#">Devamını oku</a>
+            </article>
+
+            <!-- Daha fazla blog yazısı buraya ekleyebilirsiniz -->
+        </section>
+
+        <section id="contact">
+            <h2>İletişim</h2>
+            <p><i class="fas fa-phone-alt"></i> +90 545 179 05 85</p> <!-- Telefon ikonu ve numara -->
+            <p><i class="fas fa-envelope"></i> <a href="mailto:amrzlyv@gmail.com">amrzlyv@gmail.com</a></p> <!-- Mail ikonu ve adresi -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Altay Mirzaliyev. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

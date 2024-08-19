@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactcss.css"> <!-- CSS dosyanız -->
+    <link rel="stylesheet" href="bckgrstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>İletişim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form-wrapper {
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .contact-form {
+            padding: 30px 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .contact-form h5.title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .contact-form p.description {
+            color: #aeb4b9;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form div {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .contact-form .form-input,
+        .contact-form .form-text-area {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form .form-text-area {
+            height: 100px;
+            resize: none;
+        }
+
+        .contact-form .form-input::placeholder,
+        .contact-form .form-text-area::placeholder {
+            color: #aeb4b9;
+            font-weight: 500;
+        }
+
+        .contact-form .submit-button-wrapper {
+            text-align: center;
+        }
+
+        .contact-form button {
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 60px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #4e585f;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" width="250" height="65" />
+        </a>
+
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">İletişim</a>
+            <a href="projects.html">Projeler</a>
+            <a href="mywebsite/ALTAY-MİRZALİYEV-CV.pdf" target="_blank">CV</a>
+        </nav>
+    </header>
+
+    <div class="contact-form-wrapper">
+        <form class="contact-form">
+            <h5 class="title">İletişim</h5>
+            <p class="description">Sorularınız, yardıma ihtiyacınız veya başka bir konuda bize ulaşmaktan çekinmeyin.</p>
+            <div>
+                <label for="name">İsim:</label>
+                <input type="text" id="name" class="form-input" placeholder="İsim" required>
+            </div>
+            <div>
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" class="form-input" placeholder="E-posta" required>
+            </div>
+            <div>
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" class="form-text-area" placeholder="Mesajınız" required></textarea>
+            </div>
+            <div class="submit-button-wrapper">
+                <button type="submit">Gönder</button>
+            </div>
+        </form>
+
+        <!-- Sosyal medya ve iletişim ikonları -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/altaymrzlyv" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/altaymrzlyv" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="tel:+905451790585" title="Telefon"><i class="fas fa-phone-alt"></i></a>
+            <a href="mailto:amrzlyv@gmail.com" title="E-posta"><i class="fas fa-envelope"></i></a>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Altay Mirzaliyev. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

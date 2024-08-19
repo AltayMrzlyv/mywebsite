@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sayfası</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyanızla bağlantı kurun -->
+    <link rel="stylesheet" href="bckgrstyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .blog-post {
+            display: flex;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .blog-post img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .blog-content h2 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .blog-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+         footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" width="250" height="65" />
+        </a>
+
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+	    <li><a href="projects.html">Projeler</a>
+            <li><a href="mywebsite/ALTAY-MİRZALİYEV-CV.pdf" target="_blank">CV</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="blog-post">
+            <img src="images/blog1.jpg" alt="Blog 1 Resmi">
+            <div class="blog-content">
+                <h2>Proje 1</h2>
+                <p>Bu, projenin bir özetidir. Daha fazla bilgi için tıklayınız.</p>
+                <a href="posts/project1.html" class="read-more">Devamını Oku</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <img src="images/blog2.jpg" alt="Blog 2 Resmi">
+            <div class="blog-content">
+                <h2>Proje 2</h2>
+                <p>Bu, projenin kısa bir özetidir. Daha fazla bilgi için tıklayınız.</p>
+                <a href="posts/project2.html" class="read-more">Devamını Oku</a>
+            </div>
+        </div>
+
+        <!-- Daha fazla blog post ekleyebilirsiniz -->
+
+    </div>
+     <footer>
+        <p>&copy; 2024 Altay Mirzaliyev. Tüm hakları saklıdır.</p>
+     </footer>
+
+
+</body>
+</html>
